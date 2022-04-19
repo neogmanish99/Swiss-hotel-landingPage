@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+    --first-color: #8524ec;
+    --second-color:#272727;
+    --third-color: #fff;
+    --4th-color: #f8f8ff;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2rem;
+    background-color: var(--4th-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    color: var(--third-color);
+    
+}
+
+li{
+    list-style: none;
+}
+
+/* Utility classes */
+
+.text-primary{
+    color: var(--first-color);
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    color: var(--third-color);
+    background-color:var(--first-color);
+    border-radius: 5px;
+    border:none;
+}
+
+.l-heading{
+    
+    font-size: 4rem;
+    margin-bottom:0.75rem;
+    line-height: 1.1;
+}
+
+.m-heading{
+    font-size:2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.s-heading{
+    font-size:1.4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.lead{
+    font-size:1.4rem;
+    margin-bottom:1.3rem;
+}
+
+.container{
+    max-width:1100px ;
+    margin:auto;
+    padding: 2rem;
+}
+
+/* Navbar */
+#nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /* top: 0; */
+    /* background-color: var(--second-color); */
+    background: rgba(0,0,0,.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: var(--third-color);
+    align-items: center;
+}
+#nav-links{
+    display: flex;
+    list-style: none;
+    
+}
+
+#nav-links li a{
+    color: var(--third-color);
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#nav-links li a:hover{
+    background-color: var(--first-color);
+    border-radius: 5px;
+}
+
+/* Showcase */
+#showcase{
+    top: 0;
+    position: relative;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(236, 236, 236);
+    
+}
+
+#showcase::before{
+    content:'';
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url(./img/david-rodrigo-Fr6zexbmjmc-unsplash.jpg) no-repeat center center/cover;
+    opacity:.3;
+}
+
+#showcase .showcase-details{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    height:100%;
+    width: 100%;
+}
+
+/* What-section */
+
+#what .container h2 {
+    text-align: center;
+}
+
+#what .container .what-items{
+    display: flex;
+    padding: 1rem;
+}
+
+#what .container .what-items .item{
+    
+    display: flex;
+    flex: 1;
+    /* justify-content:space-between; */
+    align-items: center;
+    padding: 1rem;
+}
+
+#what .container .what-items i{
+    background-color: var(--first-color);
+    padding: 1rem;
+    border-radius:50%;
+    margin:1rem 0;
+    color: var(--third-color);
+}
+
+#what .container .what-items .item div{
+    padding: 1.2rem;
+}
+
+#what .container .what-items .item div h3{
+    margin-bottom: .8rem;
+}
+/* Who section */
+
+#who{
+    display: flex;
+    
+}
+
+#who div{
+    flex: 1;
+}
+
+#who img{
+    display: block;
+    width: 100%;
+    background: no-repeat center center/cover;
+}
+
+#who .who-we-are{
+    padding: 2rem;
+    background-color: var(--second-color);
+    color: var(--third-color);
+}
+
+#who .who-we-are p{
+    margin: 0.75rem 0;
+    line-height: 1.4rem;
+}
+
+#who .who-we-are ul{
+    margin: 0.6rem 0;
+}
+
+#who .who-we-are ul li {
+    border-bottom: 1px solid rgb(80, 80, 80);
+    padding: 0.5rem 0;
+}
+
+/* Contact Information */
+#contact{
+    background-color: #f3f3ff;
+}
+#contact form{
+    padding: 1rem 0;
+}
+#contact p{
+    padding: .3rem 0;
+}
+
+#contact form .form-items label{
+    display: block;
+    margin-bottom: .2rem;
+}
+#contact form .form-items {
+    margin-bottom: 1.1rem;
+}
+#contact form .form-items input,
+#contact form .form-items textarea{
+    width: 100%;
+    border:none;
+    padding:.6rem;
+    border-radius: 5px;
+}
+
+#contact form .send button{
+font-size:1.2rem
+}
+
+#contact form .send button:hover{
+    background-color: #6300cc;
+}
+
+#footer {
+    background-color: var(--second-color);
+    text-align: center;
+    color:var(--third-color);
+}
+
+/* Changing the scrollbar */
+
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,var(--first-color));
+    
+}
